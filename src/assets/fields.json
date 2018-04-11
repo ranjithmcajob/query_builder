@@ -1,0 +1,8 @@
+{
+    "age": { "name" : "Age", "type": "number"},
+    "gender": {"name": "gender", "type": "number"}, 
+    "mykey": {"name": "mykey", "type": "number"}, 
+    "mykey1": {"name": "mykey1", "type": "number"}, 
+    "mykey2": {"name": "mykey2", "type": "number"} 
+
+}

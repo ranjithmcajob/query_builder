@@ -1,0 +1,14 @@
+<query-builder [(ngModel)]='query' [config]='config' *ngIf="validFields.length > 0">
+   <ng-container *queryField="let rule; let fields=fields;">
+    <div>
+      <input list="browsers" [ngModel]="rule.field" #mn (ngModelChange)="changeField(mn.value, rule)">
+      <datalist id="browsers">
+        <option *ngFor="let field of fields" [value]="field.value">
+      </datalist>
+    </div>
+  </ng-container>
+</query-builder>
+<div class="margin30">
+  <textarea >{{query | json}}</textarea>
+</div>
+
